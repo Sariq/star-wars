@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "variables.scss";
+/* General styles and layout */
+/* VARIABLES  */
+
+body {
+    background-image: url('/assets/images/stars-bg.jpg');
+    font-family: DIN, Helvetica, Arial, sans-serif;
+}
+
+.mat-icon-button[disabled] .mat-paginator-decrement,
+.mat-icon-button[disabled] .mat-paginator-increment {
+    border-color: #393939
+}
+
+.mat-icon-button .mat-paginator-decrement,
+.mat-icon-button .mat-paginator-increment {
+    border-color: $text-color
+}
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+    stroke: $general-yellow;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    min-height: 700px;
+    width: 60%;
+    position: relative;
+    margin: auto;
+    padding: 0!important;
+    border: 0!important;
+    .table-loading-shade {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 56px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.15);
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mat-table {
+        background-color: $bg-color;
+        color: $text-color;
+        .mat-cell {
+            color: $text-color;
+        }
+        .mat-header-row,
+        .mat-row {
+            border-bottom-width: 5px;
+        }
+        .mat-header-cell {
+            font-weight: bold;
+            font-size: 16px;
+            color:$text-color;
+            a {
+                color: $text-color;
+            }
+        }
+        .mat-column-name {
+            cursor: pointer;
+        }
+    }
+    .mat-paginator {
+        background-color: $bg-color;
+        color: $text-color;
+    }
+}
+
+.comp-container {
+    img {
+        margin: auto;
+        height: 147px;
+        display: block;
+    }
+}
+
+.mat-dialog-container {
+    padding: 0!important;
+    background-color: $bg-color;
+    border: solid 1px $general-yellow;
+}

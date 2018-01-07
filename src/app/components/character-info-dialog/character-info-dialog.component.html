@@ -1,0 +1,48 @@
+<div class="bedazzlement">
+  <div class="title">
+    <h1>{{data.character.name}}</h1>
+  </div>
+</div>
+<div class="info-container">
+
+  <div class="home-planet">{{data.character.name}} comes from {{data.character.homePlanet}}</div>
+  <div class="additional-info">
+    <h4>Additional Information:</h4>
+  </div>
+  <div class="sub-info">
+    <div class="decal"></div>
+    <div class="text">Heigth: {{data.character.height}}</div>
+  </div>
+  <div class="sub-info">
+    <div class="decal"></div>
+    <div class="text">Mass: {{data.character.mass}}</div>
+  </div>
+  <div class="sub-info">
+    <div class="decal"></div>
+    <div class="text">Hair Color: {{data.character.hair_color}}</div>
+  </div>
+  <div class="sub-info">
+    <div class="decal"></div>
+    <div class="text">Skin Color: {{data.character.skin_color}}</div>
+  </div>
+  <div class="sub-info">
+    <div class="decal"></div>
+    <div class="text">Eye Color: {{data.character.eye_color}}</div>
+  </div>
+  <div class="sub-info">
+    <div class="decal"></div>
+    <div class="text">Birth Year: {{data.character.birth_year}}</div>
+  </div>
+  <div class="sub-info">
+    <div class="decal"></div>
+    <div class="text">Gender: {{data.character.gender}}</div>
+  </div>
+</div>
+<div class="bottom-class">
+  <div class="close-btn"><button mat-raised-button color="primary" (click)="onCloseClick()">Close</button></div>
+
+  <div class="triangle-crop">
+    <img class="author-photo" src="https://lumiere-a.akamaihd.net/v1/images/599b688750c2fb0001358097-image_cd367697.png?width=144"
+      alt="StarWars.com Team">
+  </div>
+</div>
